@@ -38,6 +38,7 @@ public class ThreadSafeDemo {
 		for (int i = 0; i < 10; i++) {
 			unsafeList.clear(); 
 			safeList.clear(); 
+			//两者都是乱序的
 			int unsafeSize = demo(unsafeList, N); 
 			int safeSize = demo(safeList, N); 
 			System.out.println("unsafe/safe: " + unsafeSize + "/" + safeSize); 
